@@ -7,7 +7,7 @@ echo $currentSoftwareVersion
 if [ "$currentSoftwareVersion" != "$lastCommitedVersion" ]; then
     echo create a tag
     git tag -a "v`cat build/linux/release/version`"
-    git push origin --tags
+    git push origin --tags 
 else
     echo tag already exists
     echo please check
